@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* sessão navbar inicio*/
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 26px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+
+/* sessão navbar fim*/
+
+
+/*sessão home inicio */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./Imagem/01.jpg);
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.changecontent::after{
+    content: '';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 15s infinite linear;
+}
+@keyframes changetxt{
+    0% {content: "França";}
+    10% {content: "Argentina";}
+    20% {content: "Bali";}
+    30% {content: "Caribe";}
+    40% {content: "Nova York";}
+    50% {content: "Portugal";}
+    60% {content: "Suiça";}
+    70% {content: "Disney";}
+    80% {content: "Egito";}
+    90% {content: "Italia";}
+    100% {content: "Noruega";}
+   
+
+}
+
+
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a{
+    padding: 10px;
+    background: #ffa500;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/*sessão home fim*/
+
+
+/*sessão book inicio*/
+
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .sumit:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/*sessão book fim*/
+
+
+/*sessão packages inicio*/
+
+.main-txt h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 50px;
+    
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+   padding: 10px;
+   text-decoration: none;
+   background: #ffa500;
+   color: white;
+   border-radius: 10px;
+}
+/*sessão packages fim*/
+
+
+
+
+/*sessão serviços inicio*/
+
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0, 0, 0,0.1) 0px 4px 12px;
+    border: none;
+    cursor:pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600; 
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+/*sessão serviços fim*/
+
+
+/*sessão galeria sessão*/
+
+.gallary{
+    margin-top: 10px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/*sessão galeria fim */
+
+/*sessão promoçoes inicio*/
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span{
+color: #ffa500;
+}
+.promoções .card{
+border-radius: 5px;
+border: none;
+box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.promoções .card img{
+border-radius: 50px;
+
+}
+.promoções .card .card-body{
+background: transparent;
+}
+.promoções .card .card-body h3{
+font-size: 25px;
+font-weight: 600;
+}
+.promoções .card .card-body p{
+font-size: 15px;
+}
+.checked{
+color: #ffa500;
+}
+.star i{
+font-size: 15px;
+}
+.promoções .card .card-body h6{
+font-size: 20px;
+}
+..main-txt h1{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: 600;
+        text-shadow: 0px 1px 1px black;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.promoções .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.promoções .card img{
+    border-radius: 50px;
+    
+}
+.promoções .card .card-body{
+    background: transparent;
+}
+.promoções .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.promoções .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.promoções .card .card-body h6{
+    font-size: 20px;
+}
+.promoções .card .card-body a{
+   padding: 10px;
+   text-decoration: none;
+   background: #ffa500;
+   color: white;
+   border-radius: 10px;
+} .card .card-body a{
+padding: 10px;
+text-decoration: none;
+background: #ffa500;
+color: white;
+border-radius: 10px;
+}
+
+/*sessão promoçoes fim*/
+
+/*sessão contato inicio*/
+
+.contato{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.contato .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.contato .row{
+    margin-top: 30px;
+}
+.contato form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.contato form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.contato .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.contato .sumit:hover{
+    width: 170px;
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/*sessão contato fim*/
+
+/*sessão footer inicio*/
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/*sessão footer fim*/
